@@ -1,34 +1,38 @@
 <!doctype html>
 <html lang="en" data-beasties-container>
-  <head>
-    <title>Double Heart Games | Cozy &amp; Puzzle Game Studio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Double Heart Games is an independent studio creating original cozy and puzzle games for PC, Steam and mobile. Explore our released and upcoming games.">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="theme-color" content="#f5efe7">
-    <base href="/">
-    <link rel="canonical" href="https://doubleheartgames.com/">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
-    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
-    <link rel="manifest" href="/assets/favicon/site.webmanifest">
-    <link rel="preload" as="image" href="/assets/design/dblhrt-trimmed.png">
 
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Double Heart Games">
-    <meta property="og:title" content="Double Heart Games | Cozy &amp; Puzzle Game Studio">
-    <meta property="og:description" content="An independent studio creating original cozy and puzzle games for PC, Steam and mobile.">
-    <meta property="og:url" content="https://doubleheartgames.com/">
-    <meta property="og:image" content="https://doubleheartgames.com/assets/design/dblhrt-trimmed.png">
-    <meta property="og:image:alt" content="Double Heart Games logo">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Double Heart Games | Cozy &amp; Puzzle Game Studio">
-    <meta name="twitter:description" content="An independent studio creating original cozy and puzzle games for PC, Steam and mobile.">
-    <meta name="twitter:image" content="https://doubleheartgames.com/assets/design/dblhrt-trimmed.png">
+<head>
+  <title>Double Heart Games | Cozy &amp; Puzzle Game Studio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Double Heart Games is an independent studio creating original cozy and puzzle games for PC, Steam and mobile. Explore our released and upcoming games.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f5efe7">
+  <base href="/">
+  <link rel="canonical" href="https://doubleheartgames.com/">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="preload" as="image" href="/assets/design/dblhrt-trimmed.png">
 
-    <script type="application/ld+json">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Double Heart Games">
+  <meta property="og:title" content="Double Heart Games | Cozy &amp; Puzzle Game Studio">
+  <meta property="og:description"
+    content="An independent studio creating original cozy and puzzle games for PC, Steam and mobile.">
+  <meta property="og:url" content="https://doubleheartgames.com/">
+  <meta property="og:image" content="https://doubleheartgames.com/assets/design/dblhrt-trimmed.png">
+  <meta property="og:image:alt" content="Double Heart Games logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Double Heart Games | Cozy &amp; Puzzle Game Studio">
+  <meta name="twitter:description"
+    content="An independent studio creating original cozy and puzzle games for PC, Steam and mobile.">
+  <meta name="twitter:image" content="https://doubleheartgames.com/assets/design/dblhrt-trimmed.png">
+
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
@@ -49,64 +53,125 @@
         ]
       }
     </script>
-    <style>
-      .app-loader {
-        position: fixed;
-        inset: 0;
-        z-index: 9999;
-        display: grid;
-        place-items: center;
-        background: #f5efe7;
+  <style>
+    .app-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: grid;
+      place-items: center;
+      background: #f5efe7;
+    }
+
+    .app-loader img {
+      width: min(240px, 60vw);
+      height: auto;
+      animation: loader-pulse 1.4s ease-in-out infinite;
+    }
+
+    .app-loader-copy {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @keyframes loader-pulse {
+
+      0%,
+      100% {
+        opacity: 0.72;
+        transform: scale(0.97);
       }
 
+      50% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
       .app-loader img {
-        width: min(240px, 60vw);
-        height: auto;
-        animation: loader-pulse 1.4s ease-in-out infinite;
+        animation: none;
       }
+    }
+  </style>
+  <style>
+    @font-face {
+      font-display: swap;
+      font-family: "Bree Serif";
+      font-style: normal;
+      font-weight: 400;
+      src: url(/assets/fonts/bree-serif-v18-latin-regular.woff2) format("woff2")
+    }
 
-      .app-loader-copy {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-      }
+    @font-face {
+      font-display: swap;
+      font-family: "Source Sans 3";
+      font-style: normal;
+      font-weight: 400;
+      src: url(/assets/fonts/source-sans-3-v19-latin-regular.woff2) format("woff2")
+    }
 
-      @keyframes loader-pulse {
-        0%,
-        100% {
-          opacity: 0.72;
-          transform: scale(0.97);
-        }
+    :root {
+      --bg: #f5efe7;
+      --surface: #fffdf9;
+      --surface-muted: #f0e4d5;
+      --line: #dbc6b3;
+      --text: #2f1d16;
+      --text-soft: #6c4f44;
+      --brand-deep: #2a0908;
+      --brand: #4d130d;
+      --accent: #db8d67;
+      --accent-strong: #c66d47;
+      --card-shadow: 0 16px 34px rgba(72, 27, 16, .12)
+    }
 
-        50% {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
 
-      @media (prefers-reduced-motion: reduce) {
-        .app-loader img {
-          animation: none;
-        }
-      }
-    </style>
-  <style>@font-face{font-display:swap;font-family:"Bree Serif";font-style:normal;font-weight:400;src:url(/assets/fonts/bree-serif-v18-latin-regular.woff2) format("woff2")}@font-face{font-display:swap;font-family:"Source Sans 3";font-style:normal;font-weight:400;src:url(/assets/fonts/source-sans-3-v19-latin-regular.woff2) format("woff2")}:root{--bg:#f5efe7;--surface:#fffdf9;--surface-muted:#f0e4d5;--line:#dbc6b3;--text:#2f1d16;--text-soft:#6c4f44;--brand-deep:#2a0908;--brand:#4d130d;--accent:#db8d67;--accent-strong:#c66d47;--card-shadow:0 16px 34px rgba(72, 27, 16, .12)}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:"Source Sans 3",sans-serif;background:radial-gradient(1200px 500px at 90% -10%,rgba(219,141,103,.2),transparent 60%),radial-gradient(1000px 500px at 10% 20%,rgba(85,29,16,.08),transparent 70%),var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}h1{font-family:"Bree Serif",serif;letter-spacing:.01em}</style><link rel="stylesheet" href="styles-2LGUHHR6.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-2LGUHHR6.css"></noscript></head>
+    html {
+      scroll-behavior: smooth
+    }
 
-  <body>
-    <app-root>
-      <div class="app-loader" role="status" aria-label="Loading Double Heart Games">
-        <img src="/assets/design/dblhrt-trimmed.png" alt>
-        <div class="app-loader-copy">
-          <h1>Double Heart Games</h1>
-          <p>Independent studio creating original cozy and puzzle games for PC, Steam and mobile.</p>
-        </div>
+    body {
+      font-family: "Source Sans 3", sans-serif;
+      background: radial-gradient(1200px 500px at 90% -10%, rgba(219, 141, 103, .2), transparent 60%), radial-gradient(1000px 500px at 10% 20%, rgba(85, 29, 16, .08), transparent 70%), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden
+    }
+
+    h1 {
+      font-family: "Bree Serif", serif;
+      letter-spacing: .01em
+    }
+  </style>
+  <link rel="stylesheet" href="styles-2LGUHHR6.css" media="print" onload="this.media='all'"><noscript>
+    <link rel="stylesheet" href="styles-2LGUHHR6.css">
+  </noscript>
+</head>
+
+<body>
+  <app-root>
+    <div class="app-loader" role="status" aria-label="Loading Double Heart Games">
+      <img src="/assets/design/dblhrt-trimmed.png" alt>
+      <div class="app-loader-copy">
+        <h1>Double Heart Games</h1>
+        <p>Independent studio creating original cozy and puzzle games for PC, Steam and mobile.</p>
       </div>
-    </app-root>
-  <script src="polyfills-5CFQRCPP.js" type="module"></script><script src="main-J3YZEKJD.js" type="module"></script></body>
+    </div>
+  </app-root>
+  <script src="polyfills-5CFQRCPP.js" type="module"></script>
+  <script src="main-J3YZEKJD.js" type="module"></script>
+</body>
+
 </html>
